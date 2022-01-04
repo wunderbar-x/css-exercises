@@ -1,0 +1,16 @@
+.uneven{
+    background-color: #ff7474;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#number2{
+    color: rgb(30, 30, 148);
+    font-size: 36px;
+}
+.uneven.cool{
+    font-size: 24px;
+}
+#number4{
+    background-color: rgb(95, 214, 95);
+    font-size: 24px;
+    font-weight: bold;
+}
