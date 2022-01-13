@@ -2,27 +2,75 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 0 20px;
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 72px;
   background: #eee;
   color: darkmagenta;
 }
 
+.content{
+  display: flex;
+  flex: 1;
+}
+
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0%;
   width: 300px;
+  max-width: 300px;
   background: royalblue;
+  padding: 20px;
+}
+
+.sidebar ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li a{
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.card-container{
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  /* makes each line stretch VVV (turns out i didnt even need it here)*/
+  align-content: stretch;
+  gap: 20px;
+  padding: 32px;
 }
 
 .card {
-  border: 1px solid #eee;
+  flex: 1 1 220px;
+  border: 1px solid rgb(163, 163, 163);
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 8px;
 }
